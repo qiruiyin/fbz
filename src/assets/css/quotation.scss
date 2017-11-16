@@ -1,0 +1,64 @@
+// 语录css
+
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+.quotation-list {
+	padding: $padding/2 $padding ;
+	padding-right: 0;
+	color: $fontColorBlack;
+
+	&.add-quotation {
+		.block {
+			flex: 1;
+		}
+
+		.img {
+			background-image: url("~assets/img/icon/quotation-edit.png");
+			background-position: center;
+			background-size: 50%;
+			background-color: $colorBgGray;
+		}
+	}
+}
+
+.quotation-list-content {
+	display: flex;
+}
+
+.quotation-time {
+	width: 4em;
+	height: $quotationUserImgW;
+	font-size: 18px;
+}
+
+
+.block-swipeout {
+	flex: 1;
+}
+
+.block {
+	display: flex;	
+}
+
+.block-img {
+	width: 30%;
+	padding-right: 10px;
+	@extend %clearfix;
+
+	.img {
+		float: left;
+		width: 100%;
+		height: 80px;
+		background: no-repeat;
+		background-size: cover;
+	}
+}
+
+.block-info {
+	flex: 1;
+	padding-right: $padding;
+	text-align: justify;
+	line-height: 1.5;
+	@include ellipsisMore(4);
+}

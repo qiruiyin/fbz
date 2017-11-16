@@ -1,0 +1,112 @@
+// 公共变量只具备参考价值（具体页面请咨询设计师）
+
+
+// 页面大小
+// 最大宽度
+$maxW: 414px;
+// 最小宽度
+$minW: 320px;
+// 左右间距
+$padding: 12px;
+$paddingTop: 12px;
+
+// 头部高度
+$headerH: 60px;
+
+// container距底部高度
+$containerBottom: 50px;
+
+// 圆角大小
+$borderRadius: 6px;
+
+// 常规输入框按钮等的高度
+$inputH: 44px;
+
+// 基础字体大小
+$fontSize: 14px;
+
+// 颜色
+// 新设计
+// 富班长颜色
+// $colorRedPrice: #e60012;
+$colorRedDeep: #970021;
+$colorBlue: #001e52;
+$colorYellowEasy: #a18a5e;
+$colorYellowEasyDeep: #896e4d;
+$bgGray: #f3f3f3;
+$colorRed: #e60012;
+
+$fontColorBlack: #333;
+$fontColor: #666;
+$fontColorGray: #999;
+// end
+
+$colorOrange: #ff8501;
+$colorYellow: #f2c138;
+$colorGreen: #1AAD19;
+$colorGrayDisabled: #ccc;
+$colorBgGray: #f1f1f1;
+$colorGray: #eee;
+
+$colorRed: #e60012;
+// end
+
+$colorBlue: #0065bd;
+
+$fontColorBlue: #0065bd;
+$borderColor: #eee;
+
+// 推荐组件
+$tuijianImgW: 60px;
+
+//购物车模块
+$cartH: 50px;
+// $cartColorYellow: #FF9500; // 淘宝
+$cartColorYellow: #ff8501;
+$cartColorRed: #DD2727;
+// $cartBg: #393939;
+$cartBg: $colorYellowEasy;
+$cartColor: #fff;
+$cartBtnFontSize: 16px;
+
+$disabledPay: rgba(0, 0, 0, .2);
+
+// icon
+$iconW: 30px;
+$iconL: $iconW + 6px;
+
+// 提示
+$tipsPadding: 10px;
+$tipsLeft: $iconW + $tipsPadding * 2;
+$tipsBg: $colorGray;
+
+// 头部
+$headerPaddingTop: $padding;
+$headerContentH: $headerH - $headerPaddingTop*2;
+$headerLinkH: 30px;
+$headerPaddingLeft: $padding/2;
+
+// 经典语录
+$quotationColorTitle: #8596aa; // 标题颜色高亮
+$quotationColorMan: $quotationColorTitle; // 人物颜色高亮
+$quotationColor: $fontColorBlack; // 正文颜色
+$quotationBtnBg: #3a393e; // 按钮颜色
+$quotationCommentBg: #eee; // 评论区背景
+$quotationSendBtnBorderTop: #ccc; // 发送按钮上边框
+$quotationSendBtnBorderBottom: #1aad19; // 发送按钮上边框
+$quotationSendBtnBackground: #ececec; // 发送按钮背景
+$quotationUserImgW: $headerContentH; // 左侧头像大小
+
+// 左右图文混排图片高度和宽度
+$imgTextImgW: 50px; 
+$imgTextImgH: 42px; 
+
+
+// 设计做的间距信息
+$uiMarginH: $paddingTop;
+$uiMarginBg: #f3f3f3;
+
+// 消息提示圆点
+$msgCircleColor: #f3472f;
+$msgCircleW: 11px;
+

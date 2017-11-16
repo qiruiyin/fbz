@@ -1,0 +1,110 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+@import '~assets/css/vux/index';
+// @import '~assets/fonts/css/font-awesome.min.css';
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+[class^="vux"], [class^="weui"] {
+  box-sizing: initial;
+}
+
+[v-cloak] {
+	display: none;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #eee;
+}
+
+body {
+	// max-width: $maxW;
+	min-width: $minW;
+	margin: 0 auto;
+	background-color: #fff;
+	font-size: $fontSize;
+	color: $fontColor;
+}
+
+p {
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul, li {
+	list-style: none;
+	margin: 0 auto;
+  padding: 0;
+}
+
+img {
+	display: block;
+}
+
+.img {
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"], input[type="file"]::-webkit-file-upload-button, button {
+    padding: 0;
+}
+
+.hide {
+	display: none !important;
+}
+
+.vux-slider > .vux-swiper > .vux-swiper-item {
+	overflow-y: auto;
+}
+
+.btns, .pay-btn {
+	padding: $padding;
+}
+
+.clearfix {
+	@extend %clearfix;
+}
+
+// selector加图标
+.el-selector {
+	&.icon {
+		&:before {
+			left: $padding !important;
+		}
+	}
+}
+
+// scroller加载更多
+.scroller {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+// 设计间距
+.uiBorderTop {
+	border-top: $uiMarginH solid $uiMarginBg !important;
+}
+
+// 
+.rich-html {
+	padding: 0 $padding $padding;
+
+	img {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}

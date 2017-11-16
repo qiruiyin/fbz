@@ -1,0 +1,25 @@
+// 重构vux部分样式
+
+// 时间线
+@import 'timeline';
+// form表单
+@import 'form';
+// 星星
+@import 'rater';
+// number
+@import 'number';
+// swiper
+@import 'swiper';
+// tabbar
+@import 'tabbar';
+
+// swiper 圆点颜色
+.vux-slider > .vux-indicator > a > .vux-icon-dot,
+.vux-slider .vux-indicator-right > a > .vux-icon-dot {
+	background-color: rgba(255, 255, 255, .4) !important;
+}
+
+.vux-slider > .vux-indicator > a > .vux-icon-dot.active,
+.vux-slider .vux-indicator-right > a > .vux-icon-dot.active {
+	background-color: rgba(255, 255, 255, .8) !important;
+}

@@ -1,0 +1,30 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+.rank-list {
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+}
+
+.tab {
+	height: 100%;
+}
+
+.tab .vux-tab {
+	// position: fixed;
+	// top: $headerH;
+	// left: 0;
+	width: 100%;
+	height: 44px;
+	background: #fff;
+	z-index: 10
+}
+
+.list {
+	height: 100%;
+	// padding-top: 44px;
+	// padding-bottom: 60px;
+}

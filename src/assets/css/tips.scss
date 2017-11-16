@@ -1,0 +1,42 @@
+// 提示
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+// $formTipVoiceW: $iconL;
+
+.dn-tips {
+	position: relative;
+	padding: $tipsPadding;
+	margin: $paddingTop $padding;
+	// padding-left: $tipsLeft !important;
+	line-height: 1.5;
+	// background-color: $tipsBg;
+	border-radius: $borderRadius;
+	color: $fontColorBlack;
+	text-align: justify;
+	font-size: 14px;
+	
+	&:before {
+		top: $tipsPadding + $paddingTop !important;
+	}
+
+	&.dn-tips-no-margin {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	span {
+		color: $colorOrange;
+		margin: 0 5px;
+	}
+
+	&.icon-horn {
+		padding-left: 26px !important;
+
+		&:before {
+			width: 20px !important;
+			height: 20px !important;
+			margin-top: -12px !important;
+		}
+	}
+}

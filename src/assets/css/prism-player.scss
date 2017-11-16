@@ -1,0 +1,92 @@
+// aliyun播放器皮肤
+
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+// $prismBtn:  
+				// prism-player, //                    ：播放器配置
+				// prism-big-play-btn, //              ：大播放按钮：
+				// prism-play-btn, //                  ：播放按钮
+				// prism-play-btn.playing, //          ：播放过程中暂停；
+				// prism-live-display, //              ：直播图标（直播时会占用播放按钮位置）
+				// prism-fullscreen-btn, //            ：全屏按钮
+				// prism-fullscreen-btn.fullscreen, // ：全屏后按钮
+				// prism-volume, //                    ：声音按钮
+				// prism-volume.mute, //               ：静音后按钮
+				// prism-cover, //                     ：播放器开始前封面配置
+				// prism-controlbar, //                ：播放器控制栏
+				// prism-time-display, //              ：时间显示总时间
+				// prism-time-display, // .current-time：当前时间
+				// prism-progress, //                  ：进度条
+				// prism-progress-loaded, //           ：加载进度
+				// prism-progress-cursor //            ：进度条位置
+				// ;
+
+.prism-player {
+	&.hidden {
+		visibility: hidden;
+	}
+
+	.prism-big-play-btn, .prism-play-btn, .prism-play-btn.playing, .prism-fullscreen-btn, .prism-fullscreen-btn.fullscreen, .prism-volume, .prism-volume.mute {
+		background: no-repeat;
+		background-size: 100%;
+	}
+
+	.prism-big-play-btn {
+		top: 50%;
+		left: 50% !important;
+		width: 46px;
+		height: 46px;
+		// width: 53px;
+		// height: 53px;
+		margin-top: -40px;
+		margin-left: -20px;
+		// margin-left: -26px;
+		background-image: url("~assets/img/prism-player/prism-big-play-btn.png") !important;
+	}
+	.prism-play-btn {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-play-btn.png");
+	}
+	.prism-play-btn.playing {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-play-btn-playing.png");
+	}
+	.prism-fullscreen-btn {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-fullscreen-btn.png");
+	}
+	.prism-fullscreen-btn.fullscreen {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-fullscreen-btn-fullscreen.png");
+	}
+	.prism-volume {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-volume.png");
+	}
+	.prism-volume.mute {
+		width: 22px;
+		height: 22px;
+		background-image: url("~assets/img/prism-player/prism-volume-mute.png");
+	}
+
+	.prism-progress {
+		background-color: #fff;
+	}
+	.prism-progress .prism-progress-played {
+		background-color: #ff8501;
+	}
+
+	.prism-progress .prism-progress-loaded {
+		background-color: #ccc;
+	}
+
+	.prism-progress .prism-progress-cursor {
+		background-color: #ff8501;
+	}
+}

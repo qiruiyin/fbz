@@ -1,0 +1,36 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+// $formTipVoiceW: $iconL;
+
+// .dn-tips {
+// 	position: relative;
+// 	padding: $padding;
+// 	margin: $padding;
+// 	padding-left: $formTipVoiceW + $padding;
+// 	line-height: 1.5;
+// 	background-color: $colorBgGray;
+// 	border-radius: $borderRadius;
+// 	color: $fontColorBlack;
+// 	text-align: justify;
+	
+// 	&:before {
+// 		top: $padding * 2;
+// 		left: $padding;
+// 	}
+
+// 	span {
+// 		color: $colorOrange;
+// 		margin: 0 5px;
+// 	}
+// }
+
+
+// .btns {
+// 	padding: $padding;
+// }
+
+// .tips {
+// 	margin-top: 30px;
+// 	padding: $padding;
+// }

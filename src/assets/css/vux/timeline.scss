@@ -1,0 +1,29 @@
+// 时间线
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+.vux-timeline {
+	.vux-timeline-item-content {
+		padding-bottom: 1em;
+		padding-left: 2em;
+	}
+
+	.vux-timeline-item-head, .vux-timeline-item-head-first {
+		left: -2px;
+		width: 16px;
+		height: 16px;
+		background: $colorYellowEasy url("~assets/img/icon/course-recent.png") no-repeat;
+		background-size: 80%;
+		background-position: center;
+ 	}
+
+ 	.vux-timeline-item-checked {
+ 		display: none;
+ 	}
+
+	.vux-timeline-item-tail {
+		width: 0;
+		background: none;
+    border: 1px dashed $colorYellowEasy;
+	}
+}

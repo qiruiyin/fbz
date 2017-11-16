@@ -1,0 +1,217 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+.img-text {
+	@include halfpxline(0, $borderColor, 0 , 0, 1px, 0);
+	padding: 15px $padding;
+	display: flex;
+
+	&.img-text-rank {
+		.text {
+			@extend %clearfix;
+			
+			.title {
+				// width: 70%;
+			}
+
+			h5 {
+				@include ellipsisMore(1);
+			}
+		}
+
+		.img-text-img {
+			width: 146px;
+			padding-bottom: 20px;
+			max-height: 90px;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 8px;
+				left: 8px;
+				width: 40px;
+				height: 40px;
+				color: #fff;
+				line-height: 16px;
+				text-align: center;
+				border-radius: 16px;
+				background: url("~assets/img/icon/icon-video.png") no-repeat;
+				background-size: 100%;
+			}
+
+			&.audio {
+				&:before {
+					background-image: url("~assets/img/icon/icon-audio.png")
+				}
+			}
+		}
+	}
+
+	&.img-text-quotation {
+		.desc {
+			overflow: hidden;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+
+			&.active {
+				white-space: normal;
+			}
+		}
+	}
+
+	&.img-text-top {
+		.desc {
+			@include ellipsisMore(2);
+		}
+	}
+
+	&.img-text-news {
+		h5 {
+			margin-bottom: 5px;
+		}
+	}
+
+	.text {
+		position: relative;
+		line-height: 1.5;
+		flex: 1;
+		width: 0;
+
+		.title {
+			width: 100%;
+			font-size: 14px;
+			line-height: 1.35;
+			color: $fontColorBlack;
+			display: flex;
+
+			&.text-left {
+				padding-right: 80px;
+				padding-bottom: 4px;
+				font-size: 16px;
+
+				& + .type {
+					display: none;
+
+					& + p {
+						font-size: 12px;
+					}
+				}
+			}
+
+			p {
+				flex: 1;
+				@include ellipsisOne();
+				text-align: left;
+				padding-right: 1em;
+			}
+		}
+
+		& > h5, & > p {
+			float: left;
+			width: 100%;
+		}
+
+		span {
+			float: right;
+			color: #999;
+			font-size: 12px;
+		}
+		
+		.desc, .type {
+			font-size: 14px;
+			padding: 6px 0;
+		}
+
+		.type {
+			padding: 0;
+			text-align: justify;
+			@include ellipsisMore(2);
+			margin-bottom: 6px;
+			margin-top: 6px;
+		}
+
+		.desc {
+			// @include ellipsisMore(2);
+			color: $fontColorGray;
+		}
+	}
+
+	.btn {
+		position: absolute;
+		top: 0;
+		right: 0;
+		line-height: 22px;
+		padding: 0 5px;
+		border: 1px solid $colorOrange;
+		border-radius: $borderRadius;
+		color: $colorOrange;
+
+		&.btn-integral {
+			// padding-left: 26px;
+
+			// &:before {
+			// 	content: "";
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	width: 22px;
+			// 	height: 22px;
+			// 	background: url("~assets/img/icon/integral.png") no-repeat;
+			// 	background-size: 60%;
+			// 	background-position: center;
+			// 	display: inline-block;
+			// }
+		}
+	}
+
+	.zan {
+		position: absolute;
+		top: 0;
+		right: 0;
+		color: $fontColorBlue;
+	} 
+}
+
+.img-text-img {
+	position: relative;
+	width: 120px;
+	overflow: hidden;
+
+	& + .text {
+		padding-left: $padding;
+	}
+
+	img {
+		// position: absolute;
+	 //  top: 0;
+	 //  bottom: 0;
+	 //  left: 0;
+	 //  right: 0;
+		// max-height: 100%;
+	  width: 100%;
+	  width: auto;
+	  height: auto;
+	  margin: auto;
+	}
+
+	.status {
+		position: absolute;
+		top: 0;
+		right: 0;
+		padding: 4px;
+		background: red;
+		color: #fff;
+		border-radius: $borderRadius;
+	}
+
+	.date {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		line-height: 1.75;
+		text-align: right;
+		color: #fff;
+		font-size: 12px;
+		background-color: rgba(84, 169, 242, .8);
+	}
+}

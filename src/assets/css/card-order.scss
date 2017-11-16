@@ -1,0 +1,107 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+$productImgW: $imgTextImgW;
+$productImgH: $imgTextImgH;
+
+.product {
+	width: 100%;
+	min-height: $productImgH;
+	line-height: 1.75;
+	display: flex;
+	background: #fff;
+
+	&.mall-product {
+		width: 100%;
+		padding: $padding/2 $padding;
+		display: flex;
+  	@include halfpxline(0, #eee, 0, 0, 1px, 0, dashed);
+
+  	&:last-child {
+  		@include halfpxline(0, #eee, 0, 0, 0, 0, dashed);
+  	}
+	}
+
+	p {
+		color: $fontColorBlack;
+	}
+}
+
+.img {
+	width: $productImgW;
+	text-align: center;
+	// background: #efefef;
+	display: flex;
+	align-items:center; /*垂直居中*/
+
+	img {
+		width: $productImgW;
+		margin: 0 auto;
+		// height: 100%;
+		// width: 100%;
+	}
+}
+
+.course-product	{
+	.product-content {
+		position: relative;
+		flex: 1;
+		padding-right: $padding;
+	}
+}
+
+.product-content {
+	position: relative;
+	min-height: $productImgH;
+	padding-left: $padding;
+}
+
+.product-info {
+	position: relative;
+	text-align: left;
+
+	&.bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		padding-left: $padding;
+	}
+
+	&.full-height {
+		min-height: $productImgH;
+
+		.num {
+			position: absolute;
+			bottom: 0;
+		}
+	}
+
+	&.full-width {
+		display: flex;
+		width: 100%;
+	}
+
+	p {
+		width: 100%;
+		color: $fontColorBlack;
+	}
+
+	span {
+		display: block;
+	}
+}
+
+.product-info-left {
+	flex: 1;
+}
+
+.product-info-right {
+	position: relative;
+	width: 9em;
+	text-align: right;
+	line-height: 1.5;
+}
+
+.product-info-time {
+	color: $fontColorGray;
+}

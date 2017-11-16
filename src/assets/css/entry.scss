@@ -1,0 +1,77 @@
+$entry: 'audio', 'video', 'download', 'mall', 'peixun', 'course';
+	$entryIconW: 42px;
+
+	$entryVideos: '1';
+	$entryVideosIconW: 89px;
+	$entryVideosIconH: 97px;
+	
+	.entry {
+		@include halfpxline(0, $borderColor, 0 , 0, 1px, 0);
+		width: 100%;
+		padding: 12px 0;
+		text-align: center;
+		display: flex;
+
+		& > div {
+			position: relative;
+			flex: 1;
+			padding-top: $entryIconW;
+			text-align: center;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				width: $entryIconW;
+				height: $entryIconW;
+				margin: 0 auto;
+				background: url("~assets/img/index/entry-video.png") no-repeat;
+				background-size: 100% auto;
+				background-position: center;	
+			}
+
+			p {
+				margin: 0 auto;
+		    margin-top: 6px;
+        font-size: 12px;
+			}
+		}
+
+		@each $iconName in $entry {
+			.entry-#{$iconName} {
+				&:before {
+					background-image: url("~assets/img/index/entry-#{$iconName}.png");
+				}
+			}
+		}
+	}
+
+	.entry-videos {
+		@include halfpxline(0, $borderColor, 0 , 0, 1px, 0);
+		width: 100%;
+		padding: 20px 8px;
+		text-align: center;
+		display: flex;
+
+		& > div {
+			flex: 1;
+			background: no-repeat;
+			background-size: 90%;
+			background-position: center top;
+
+			p {
+				margin-top: 6px;
+				max-width: $entryVideosIconW;
+				// text-align: justify;
+			}
+		}
+		
+		img {
+		  width: 90%;
+    	margin: 0 auto;
+    	border-radius: 10px;
+    	visibility: hidden;
+		}
+	}

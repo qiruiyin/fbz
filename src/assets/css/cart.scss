@@ -1,0 +1,62 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+	
+.cart {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: $cartH;
+	background: #fff;
+	z-index: 10;
+	display: flex;
+	font-size: 15px;
+
+	div {
+		width: 50%;
+		line-height: $cartH;
+		text-align: center;
+	}
+}
+
+.add-cart, .go-balance {
+	background: $cartColorYellow;
+	color: #fff;	
+}
+
+.go-balance {
+	background: $cartColorRed;
+}
+
+.balance {
+	position: relative;
+	padding: 5px;
+	// background: red;
+	line-height: 1;
+
+	&:before {
+		height: auto;
+		line-height: 1;
+		display: block;
+	}
+	
+	span {
+		height: auto;
+		line-height: 1.35;
+		font-size: 14px;
+		display: block;
+	}
+
+	i {
+		position: absolute;
+		font-style: normal;
+		left: 50%;
+		top: 0;
+		margin-left: 1em;
+		line-height: 1;
+		font-size: 14px;
+		color: red;
+
+	}
+}

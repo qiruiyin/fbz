@@ -1,0 +1,30 @@
+@import '~lib/sandal/core';
+@import '~assets/css/core/functions', '~assets/css/core/mixins', '~assets/css/core/vars';
+
+.detail-type, .container {
+	height: 100%;
+	overflow: scroll;
+}
+
+.tab {
+	height: 100%;
+}
+
+.table {
+	width: 100%;
+	margin-bottom: $padding;
+  white-space: nowrap;
+  overflow: auto;
+
+  td, th {
+  	padding: 0 1em;
+  }
+}
+
+.banner {
+	margin-bottom: $padding;
+}
+
+.course-list {
+	padding-bottom: 30px;
+}

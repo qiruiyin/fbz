@@ -1,0 +1,65 @@
+// 图标css
+
+$icon: service, // 服务
+			 idCardType, // 证件类型
+			 idCard, // 身份证
+			 tel, // 手机号
+			 add, // 添加
+			 horn, // 喇叭
+			 user, // 姓名
+			 weixin, // 微信
+			 qrcode, // 验证码
+			 user-address, // 用户地址
+			 user-agent, // 我的代理
+			 user-cart, // 我的购物车
+			 user-course, // 我的课程
+			 user-customer, // 我的客户
+			 user-feedback, // 用户信息反馈
+			 user-file, // 我的资料
+			 user-activity, // 活动订单
+			 user-member, // 会员中心
+			 user-share, // 我的分享
+			 user-wallet, // 我的钱包
+			 user-ticket, // 我的门票券  
+			 user-friend, // 我的好友
+			 user-clear, // 清楚缓存 
+			 user-voucher, // 清楚缓存 
+			 user-integral, // 清楚缓存 
+			 // user-clear, // 清楚缓存
+			 // user-haoyou, // 用户好友
+			 // user-course, // 用户课程订单
+			 // user-kefu, // 用户客服
+			 // user-mall, // 用户生成订单
+			 // user-feedback, // 用户信息反馈
+			 // user-person, // 用户个人信息
+			 // user-share, // 用户分享
+			 // user-study, // 用户学习
+			 // user-tuiguang, // 用户推广
+			 // user-tuisong, // 推送设置
+			 // user-quotation, // 语录
+			service; // 
+
+.icon {
+	position: relative;
+	padding-left: $iconL;
+	
+  &:before {
+  	content: "";
+  	position: absolute;
+  	left: 0;
+  	top: 50%;
+  	margin-top: - $iconW/2;
+  	width: $iconW;
+	  height: $iconW;
+  	background: left center no-repeat;
+  	background-size: 100%;
+	}
+}
+
+@each $iconName in $icon {
+	.icon-#{$iconName} {
+		&:before {
+			background-image: url("~assets/img/icon/#{$iconName}.png");
+		}
+	}
+}
